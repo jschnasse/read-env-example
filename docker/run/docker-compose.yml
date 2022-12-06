@@ -1,0 +1,10 @@
+version: "3.2"
+services:
+
+  read-env-example:
+    image: read-env-example:0.1.0
+    ports:
+      - 80:80
+    env_file:
+      - myapp.env
+    
