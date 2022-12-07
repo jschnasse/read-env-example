@@ -1,3 +1,5 @@
+Repo for this stackoverflow answer: https://stackoverflow.com/a/74701083/1485527
+
 ## Accessing container environment at startup time with typescript / react / docker
 
 1. **Create example app**
