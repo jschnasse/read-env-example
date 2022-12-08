@@ -7,9 +7,14 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+
+declare global {
+    interface Window { extended: any; }
+}
+
 root.render(
   <React.StrictMode>
-    <App />
+    <App {...{MYAPP_API_ENDPOINT:window.extended.MYAPP_API_ENDPOINT}}/>
   </React.StrictMode>
 );
 

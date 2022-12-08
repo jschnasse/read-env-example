@@ -2,17 +2,16 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-declare global {
-  interface Window { extended: any; }
+type Config={
+    MYAPP_API_ENDPOINT:string
 }
-
-function App() {
+function App(props : Config) {
   return (
     <div className="App">
       <header className="App-header">
-        
-          You have configured {window.extended.MYAPP_API_ENDPOINT}
-
+        <div>
+          You have configured {props.MYAPP_API_ENDPOINT}
+        </div>
       </header>
     </div>
   );
